@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Hero_Section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#Hero_Section h1{
+    position: absolute;
+    color: rgb(243, 235, 235);
+    top: 13rem;
+    left: 8rem;
+    font-weight: 800;
+}
+
+#Hero_Section header{
+    position: absolute;
+    top: 3rem;
+    left: 8rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navigation_List ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45rem;
+}
+
+.Navigation_List li{
+    list-style: none;
+    color: white;
+    margin: 0 0.5rem;
+}
+
+video{
+    width: 100%;
+    z-index: -100;
+    object-fit: cover;
+}
+
+header p{
+    color: rgb(242, 235, 235);
+}
+
+#Hero_Section span{
+    color: gold;
+}
