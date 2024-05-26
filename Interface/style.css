@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 #Hero_Section{
@@ -16,6 +20,15 @@
     top: 13rem;
     left: 8rem;
     font-weight: 800;
+    font-size: 3rem;
+}
+
+.Description{
+    position: absolute;
+    left: 8rem;
+    top: 30rem;
+    color: white;
+    font-size: 1.1rem;
 }
 
 #Hero_Section header{
@@ -30,13 +43,36 @@
 .Navigation_List ul{
     display: flex;
     flex-direction: row;
-    margin-left: 45rem;
+    margin-left: 40rem;
 }
 
 .Navigation_List li{
     list-style: none;
-    color: white;
     margin: 0 0.5rem;
+}
+
+.Navigation_List li i{
+    padding-right: 0.5rem;
+}
+
+.Order_Now *{
+    color: #D7AC72;
+}
+
+.Order_Now *:hover{
+    text-decoration: underline solid #D7AC72;
+}
+
+.Navigation_List a{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+   
+}
+
+.Navigation_List a:hover{
+    text-decoration: underline #ffffff;
+    transition: all ease-in-out;
+    animation-duration: 2ms;
 }
 
 video{
@@ -45,10 +81,31 @@ video{
     object-fit: cover;
 }
 
-header p{
+.Company_Title{
     color: rgb(242, 235, 235);
+    font-weight: 700;
 }
 
 #Hero_Section span{
-    color: gold;
+color: #D7AC72;
+}
+
+.line{
+    background-color: #D7AC72;
+    position: absolute;
+    left: 8rem;
+    top: 27rem;
+    width: 10rem;
+    height: 0.6rem;
+    display: block;
+}
+
+#Hero_Section svg{
+    position: absolute;
+    top: 10rem;
+    z-index: -10;
+}
+
+#Service_Section{
+    background-color: #080D1E;
 }
