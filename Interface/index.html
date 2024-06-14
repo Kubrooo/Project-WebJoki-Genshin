@@ -15,28 +15,60 @@
             <source src="../Asset/hu-tao-scary-genshin-impact-moewalls-com.mp4" type="video/mp4">
         </video>
         <header>
-            <div>
+            <div class="headers">
                 <p class="Company_Title">Ku's Joki Genshin</p>
-            </div>
-            <div class="Navigation_List">
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SERVICE</a></li>
-                    <li><a href="">PROMO</a></li>
-                    <li><a href="">TESTIMONIAL</a></li>
-                    <li class="Order_Now"><a href=""><b><i class="fa-solid fa-cart-shopping"></i></b><b>ORDER NOW</b></a></li>
-                </ul>
             </div>
         </header>
         <h1>GA PUNYA WAKTU MAIN <br> TAPI TAKUT <br> <span>KETINGGALAN?</span></h1>
         <div class="line"></div>
         <p class="Description"><strong>Tenang</strong>.. Dengan jasa kami anda tidak perlu lagi takut <br> ketinggalan kontent atau update baru.
            Dengan jasa <br> kami,kami bisa mengurus akun anda,mulai dari archon <br> quest hingga explore. Jadi tunggu apalagi?</p>
-           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,224L80,208C160,192,320,160,480,160C640,160,800,192,960,202.7C1120,213,1280,203,1360,197.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+           <div class="input_card_background">
+            <h2 class="card_title">ISI DATA AKUN DISINI YA...</h2>
+            <p>Nama :</p>
+            <input id = "inputNama"type="text">
+            <p>Nickname :</p>
+            <input id = "inputNickname"type="text">
+            <p>Adventure Rank :</p>
+            <input id= "inputAdventureRank"type="number">
+            <p>Dimulai pada :</p>
+            <input id = "inputDimulaiPada"type="date">
+            <p>Services :</p>
+            <select name="services" id="services">
+                <option value="Opsi joki" disabled selected>Mau Joki Apa?</option>
+                <option value="JokiMainQuest">Joki MainQuest</option>
+                <option value="JokiSideQuest">Joki SideQuest</option>
+                <option value="JokiExplore">Joki Explore</option>
+                <option value="JokiBuildCharacter">Joki BuildCharacter</option>
+                <option value="JokiRawatAkun">Joki RawatAkun</option>
+            </select>
+            <button id="Submit">Tambah</button> <button id="Cancel">Cancel</button>
+           </div>
     </article>
-    <article id="Service_Section">
-        <span>Services</span>
+    <article id="List_Section">
+        <div class="SearchBar_Wrapper">
+            <input id="searchBar" type="text">
+            <button id="btnAsc">Ascending</button>
+            <button id="btnDesc">Descending</button>
+        </div>
+        <div class="list_jokian">
+            <table class="head">
+                <th>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Nickname</td>
+                        <td>Adventure Rank</td>
+                        <td>Dimulai pada</td>
+                        <td>Services</td>
+                        <td>Action</td>
+                    </tr>
+                </th>
+            </table>
+            <div id="table_wrapper">
+            </div>
+        </div>
     </article>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/8b223a891b.js" crossorigin="anonymous"></script>
 </body>
 </html>

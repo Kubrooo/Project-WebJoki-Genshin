@@ -12,6 +12,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: #000009;
 }
 
 #Hero_Section h1{
@@ -35,44 +36,6 @@
     position: absolute;
     top: 3rem;
     left: 8rem;  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.Navigation_List ul{
-    display: flex;
-    flex-direction: row;
-    margin-left: 40rem;
-}
-
-.Navigation_List li{
-    list-style: none;
-    margin: 0 0.5rem;
-}
-
-.Navigation_List li i{
-    padding-right: 0.5rem;
-}
-
-.Order_Now *{
-    color: #D7AC72;
-}
-
-.Order_Now *:hover{
-    text-decoration: underline solid #D7AC72;
-}
-
-.Navigation_List a{
-    color: rgb(245, 245, 245);
-    text-decoration: none;
-   
-}
-
-.Navigation_List a:hover{
-    text-decoration: underline #ffffff;
-    transition: all ease-in-out;
-    animation-duration: 2ms;
 }
 
 video{
@@ -87,7 +50,7 @@ video{
 }
 
 #Hero_Section span{
-color: #D7AC72;
+    color: #D7AC72;
 }
 
 .line{
@@ -100,12 +63,140 @@ color: #D7AC72;
     display: block;
 }
 
-#Hero_Section svg{
+.input_card_background{
+    background-color: #d7ab72ae;
+    width: 23rem;
     position: absolute;
-    top: 10rem;
-    z-index: -10;
+    top: 12rem;
+    left: 60rem;
+    border-radius: 0.4rem;
+    padding: 2rem;
+    filter: drop-shadow(3px 12px 4px white);
 }
 
-#Service_Section{
-    background-color: #080D1E;
+.input_card_background p{
+    color: white;
+}
+
+.card_title{
+    color: white;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.input_card_background input{
+    display: block;
+    margin: 0.5rem 0;
+    border: none;
+    width: 15rem;
+    height: 1.45rem;
+    border-radius: 4px;
+    padding: 0 0.3rem;
+}
+
+input:focus,select:focus{
+    outline: none;
+}
+
+#services{
+    display: block;
+    margin: 0.5rem 0;
+    border: none;
+    width: 15.6rem;
+    height: 1.45rem;
+    border-radius: 4px;
+    padding: 0 0.3rem;
+}
+
+#Submit{
+    background-color: #00B2EA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+#Cancel{
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 7rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#List_Section{
+    background-color: #000009;
+}
+
+.SearchBar_Wrapper{
+    display: flex;
+    justify-content: end;
+    margin-right: 8rem;
+}
+
+#searchBar{ 
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 12rem;
+    height: 1.5rem;
+    border: #D7AC72 solid 2px;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.list_jokian{
+    width: 84%;
+    margin: auto;
+}
+
+.list_jokian .head{
+    background-color: #D7AC72;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    table-layout: fixed;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.list_jokian .head td{
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.list_jokian .table_wrapper{
+    max-height: 100rem;
+    overflow: auto;
+}
+.list_jokian .tbody{
+    color: white;
+    border: 0.5px solid #D7AC72;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    table-layout: fixed;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.list_jokian .body i{
+    margin: 0 3px;
+    cursor: pointer;
+    color: #D7AC72;
+}
+
+#btnAsc , #btnDesc{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: 2.3rem;
+    border: #D7AC72 solid 2px;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+    margin-left: 0.3rem;
 }
