@@ -117,6 +117,12 @@ input:focus,select:focus{
     margin-top: 1rem;
 }
 
+#Submit:hover{
+    background-color: white;
+    color: #00B2EA;
+    cursor: pointer;
+}
+
 #Cancel{
     background-color: #FF0000;
     color: white;
@@ -128,6 +134,12 @@ input:focus,select:focus{
     margin-left: 1rem;
 }
 
+#Cancel:hover{
+    background-color: white;
+    color: #FF0000;
+    cursor: pointer;
+}
+
 #List_Section{
     background-color: #000009;
 }
@@ -135,7 +147,7 @@ input:focus,select:focus{
 .SearchBar_Wrapper{
     display: flex;
     justify-content: end;
-    margin-right: 8rem;
+    width: 92%;
 }
 
 #searchBar{ 
@@ -184,13 +196,17 @@ input:focus,select:focus{
     text-align: center;
 }
 
-.list_jokian .body i{
+.list_jokian .tbody i{
     margin: 0 3px;
-    cursor: pointer;
-    color: #D7AC72;
 }
 
-#btnAsc , #btnDesc{
+.list_jokian .tbody i:hover{
+    color: #D7AC72;
+    cursor: pointer;
+}
+
+
+#btnAsc, #btnDesc{
     margin-top: 3rem;
     margin-bottom: 1rem;
     width: 8rem;
@@ -200,3 +216,4 @@ input:focus,select:focus{
     padding: 0.3rem 0.5rem;
     margin-left: 0.3rem;
 }
+

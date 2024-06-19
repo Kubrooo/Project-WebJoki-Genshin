@@ -1,4 +1,32 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: script.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: script.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * @fileoverview Skrip untuk mengelola data daftar Jokian, termasuk menambah, mengedit, menghapus, mencari, dan menyortir data.
  */
 
@@ -9,7 +37,7 @@ const inputNama = document.getElementById("inputNama");
 
 /**
  * @type {HTMLInputElement} Input untuk memasukkan nickname.
- */ 
+ */
 const inputNickname = document.getElementById("inputNickname");
 
 /**
@@ -58,7 +86,7 @@ const btnAsc = document.getElementById("btnAsc");
 const btnDesc = document.getElementById("btnDesc");
 
 /**
- * @type {Array<Object>} Array untuk menyimpan daftar Jokian dari local storage.
+ * @type {Array&lt;Object>} Array untuk menyimpan daftar Jokian dari local storage.
  */
 let listJokian = JSON.parse(localStorage.getItem('listJokian')) || [];
 
@@ -81,27 +109,27 @@ const simpanKeLocalStorage = () => {
 
 /**
  * Fungsi untuk menampilkan daftar Jokian.
- * @param {Array<Object>} [filteredJokian=listJokian] - Array opsional untuk menampilkan daftar yang sudah difilter.
+ * @param {Array&lt;Object>} [filteredJokian=listJokian] - Array opsional untuk menampilkan daftar yang sudah difilter.
  */
 const tampilkanListJokian = (filteredJokian = listJokian) => {
     tableList.innerHTML = "";
     filteredJokian.forEach(akun => {
         tableList.innerHTML += `
-        <table class="tbody">
-            <tbody>
-                <tr>
-                    <td>${akun.nama}</td>
-                    <td>${akun.nickname}</td>
-                    <td>${akun.adventureRank}</td>
-                    <td>${akun.dimulaiPada}</td>
-                    <td>${akun.services}</td>
-                    <td>
-                        <i class="fa-solid fa-pen-to-square" onClick="editItem(${akun.id})"></i>
-                        <i class="fa-solid fa-trash" onclick="hapusAkun(${akun.id})"></i>
-                    </td>
-                </tr>
-            </tbody>
-        </table>`;
+        &lt;table class="tbody">
+            &lt;tbody>
+                &lt;tr>
+                    &lt;td>${akun.nama}&lt;/td>
+                    &lt;td>${akun.nickname}&lt;/td>
+                    &lt;td>${akun.adventureRank}&lt;/td>
+                    &lt;td>${akun.dimulaiPada}&lt;/td>
+                    &lt;td>${akun.services}&lt;/td>
+                    &lt;td>
+                        &lt;i class="fa-solid fa-pen-to-square" onClick="editItem(${akun.id})">&lt;/i>
+                        &lt;i class="fa-solid fa-trash" onclick="hapusAkun(${akun.id})">&lt;/i>
+                    &lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+        &lt;/table>`;
     });
 }
 
@@ -122,7 +150,7 @@ const clearInputs = () => {
 btnSubmit.addEventListener("click", (event) => {
     event.preventDefault();
     if (inputNama.value.trim() === "" || inputNickname.value.trim() === "" || inputAdventureRank.value.trim() === "" || inputDimulaiPada.value === "" ||
-        inputServices.value.trim() === "" || inputServices.value == "Mau Joki Apa?") {
+        inputServices.value.trim() === "") {
         alert("Mohon mengisi semua input yang tersedia");
         return;
     }
@@ -225,3 +253,26 @@ btnDesc.addEventListener("click", () => sortListJokian('desc'));
 
 // Menampilkan daftar Jokian awal.
 tampilkanListJokian();
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#btnAsc">btnAsc</a></li><li><a href="global.html#btnCancel">btnCancel</a></li><li><a href="global.html#btnDesc">btnDesc</a></li><li><a href="global.html#btnSubmit">btnSubmit</a></li><li><a href="global.html#clearInputs">clearInputs</a></li><li><a href="global.html#editId">editId</a></li><li><a href="global.html#editItem">editItem</a></li><li><a href="global.html#hapusAkun">hapusAkun</a></li><li><a href="global.html#idJokian">idJokian</a></li><li><a href="global.html#inputAdventureRank">inputAdventureRank</a></li><li><a href="global.html#inputDimulaiPada">inputDimulaiPada</a></li><li><a href="global.html#inputNama">inputNama</a></li><li><a href="global.html#inputNickname">inputNickname</a></li><li><a href="global.html#inputServices">inputServices</a></li><li><a href="global.html#listJokian">listJokian</a></li><li><a href="global.html#searchBar">searchBar</a></li><li><a href="global.html#simpanKeLocalStorage">simpanKeLocalStorage</a></li><li><a href="global.html#sortListJokian">sortListJokian</a></li><li><a href="global.html#tableList">tableList</a></li><li><a href="global.html#tampilkanListJokian">tampilkanListJokian</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Fri Jun 14 2024 13:25:17 GMT+0700 (Western Indonesia Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
